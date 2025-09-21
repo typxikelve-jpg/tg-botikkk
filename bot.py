@@ -24,7 +24,8 @@ from aiogram.fsm.storage.memory import MemoryStorage
 API_TOKEN = "8370797958:AAE5eXZOq66IhaK3D9Y5tU9ad-2AQQPuf3s"   # <-- токен бота
 ADMINS = [7721203223, 7565250716, 8048631870]                 # <-- список айди админов
 app = FastAPI()
-WEBHOOK_URL = os.getenv("WEBHOOK_URL", "https://tg-botikkk.vercel.app/webhook")
+WEBHOOK_PATH = "/webhook"
+WEBHOOK_URL = os.getenv("https://tg-botikkk.vercel.app/webhook")
 
 PAYMENT_DETAILS = """
 💳 Реквизиты для перевода:
@@ -1605,16 +1606,23 @@ async def reset_booked_slots():
 
 # -------------------------------
 # Запуск бота
-# -------------------------------
 @app.on_event("startup")
 async def startup_event():
-    # Настроим вебхук при старте
-    await telegram_app.bot.set_webhook(WEBHOOK_URL)
+    await bot.delete_webhook()
+    await bot.set_webhook(WEBHOOK_URL)
+    asyncio.create_task(reset_booked_slots())
+    print(f"✅ Вебхук установлен: {WEBHOOK_URL}")
 
-@app.post("/webhook")
-async def webhook(req: Request):
+@app.on_event("shutdown")
+async def shutdown_event():
+    await bot.delete_webhook()
+    print("❌ Вебхук удалён")
+
+@app.post(WEBHOOK_PATH)
+async def telegram_webhook(req: Request):
     data = await req.json()
-    update = Update.de_json(data, telegram_app.bot)
-    await telegram_app.process_update(update)
+    update = types.Update(**data)
+    await dp.process_update(update)
     return {"ok": True}
+
 
