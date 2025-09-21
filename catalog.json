@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Испарители / АКБ",
+    "items": [
+      {
+        "name": "Картриджи",
+        "price": 300,
+        "options": [
+          "XROS"
+        ],
+        "options_stock": {
+          "XROS": 2
+        }
+      },
+      {
+        "name": "вилко",
+        "price": 57,
+        "stock": 2
+      }
+    ]
+  },
+  {
+    "name": "Одноразки",
+    "items": [
+      {
+        "name": "DUMMY VAPES 8000 ЗАТЯЖЕК",
+        "price": 500,
+        "options": {
+          "Rainbow Rapper Skittles": 10,
+          "Wacky watermelon": 10,
+          "Alien Invasion": 10,
+          "Bad berry": 10
+        }
+      },
+      {
+        "name": "РИК И МОРТИ 20000 затяжек 6%",
+        "price": 1000,
+        "options": {
+          "Черничный небулон": 10,
+          "Черника малина": 10,
+          "Холлс Левин": 10,
+          "Скитлс ренегад": 10,
+          "Малина ежевика": 10,
+          "Виноградный холлс": 10
+        }
+      },
+      {
+        "name": "DOJO VAPORESSO 25000 5%",
+        "price": 1000,
+        "options": {
+          "Watermelon Ice": 10,
+          "Strawberry slam Dunk": 10,
+          "Hawaii Dream": 10,
+          "Tropic Bomb": 10,
+          "Blue Star": 10
+        }
+      },
+      {
+        "name": "HUSKY 15000 5%",
+        "price": 800,
+        "options": {
+          "Tropic Dew": 10,
+          "Siberian Blck": 10,
+          "Animal Jam": 10,
+          "Wolfberry": 10,
+          "Fresher": 10
+        }
+      },
+      {
+        "name": "GEEKBAR PULSE X 25000 6%",
+        "price": 1000,
+        "options": [
+          "выап"
+        ],
+        "stock": 10,
+        "options_stock": {
+          "Персик лед": 0
+        }
+      },
+      {
+        "name": "DUALL BAR 12000 5%",
+        "price": 800,
+        "options": {
+          "Малиновый Лимонад": 10,
+          "Ледяная Малина": 10,
+          "Вишня Клубника": 10
+        },
+        "options_stock": {
+          "Малиновый Лимонад": 0
+        }
+      },
+      {
+        "name": "LOST MARY OS 5% 12000",
+        "price": 900,
+        "options": [
+          "Черника Лайм"
+        ],
+        "options_stock": {
+          "Черника Лайм": 0
+        }
+      },
+      {
+        "name": "UDN BAR 5% 22000",
+        "price": 800,
+        "options": {
+          "Виноград": 10
+        },
+        "options_stock": {
+          "Виноград": 0
+        }
+      }
+    ]
+  },
+  {
+    "name": "Снюсы и пластинки",
+    "items": [
+      {
+        "name": "MAD ПЛАСТИНКИ 3/4 Hard",
+        "price": 400,
+        "options": {
+          "Blacberry mint": 10,
+          "Berry ice": 10,
+          "Cherry mint": 10
+        },
+        "options_stock": {
+          "Cherry mint": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "Поды",
+    "items": [
+      {
+        "name": "Pasio 2",
+        "price": 2700,
+        "options": {
+          "EBLAN": 10,
+          "БЕЛЫЙ": 10,
+          "ЧЕРНЫЙ": 10,
+          "ДОЛБОЕБ": 10
+        },
+        "options_stock": {
+          "EBLAN": 5,
+          "БЕЛЫЙ": 0,
+          "ЧЕРНЫЙ": 10,
+          "ДОЛБОЕБ": 10
+        }
+      }
+    ]
+  }
+]
